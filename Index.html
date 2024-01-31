@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      max-width: 1600px;
+      margin: 40px auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+    <h2>CONSULTAS</h2>
+
+  <form action="#" method="post">
+   <table>
+<tr>
+   <td> <label for="nombre"></label></td>
+   <td> <input type="text" id="nombre" name="nombre" required placeholder="Nombre"></td>
+    <td><label for="surname"></label></td>
+    <td><input type="text" id="surname" name="surname" required placeholder="Apellidos"></td>
+</tr>
+<tr>
+    <td><label for="dni"> </label></td>
+    <td><input type="number" id="dni" name="dni" required placeholder="DNI"></td>
+    <td><label for="phone"></label></td>
+    <td><input type="number" id="phone" name="phone" required placeholder="phone"></td>
+    
+
+</tr>
+    <tr>   
+    
+    <td><label for="cellphone"></label></td>
+    <td><input type="text" id="cellphone" name="cellphone" required placeholder="Celular"></td> 
+    <td><label for="email"></label></td>
+    <td><input type="email" id="email" name="email" required placeholder="Correo electrónico"></td>
+
+</tr>
+    <tr>
+        <td><label for="Departamento"></label></td>
+        <td><select name="Departamento" id="Departamento" required selection-placeholder="Departamento">
+            <option value="1">Lima</option>
+            <option value="2">Norte</option>
+            <option value="3">Centro</option>
+            <option value="4">Sur</option>
+        </select></td>
+    </tr>
+
+
+
+
+
+
+
+
+
+<tr>
+    
+    <td><label for="mensaje"></label></td>
+    <td><textarea id="mensaje" name="mensaje" rows="4" required></textarea></td>
+</tr>
+
+</table>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
