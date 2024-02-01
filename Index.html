@@ -5,27 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de Contacto</title>
   <style>
-   *{
-    text-align: left;
-    } 
-    
-    body {
-      font-family: Arial, sans-serif;
-    }
-    form {
-      max-width: 4000px;
-      margin: 20px auto;
-    }
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
-    input, textarea {
-      width: 200px;
-      padding: 8px;
-      margin-bottom: 16px;
-      box-sizing: border-box;
-    }
+   
     button {
       background-color: #4CAF50;
       color: white;
@@ -41,34 +21,34 @@
     
 
   <form action="#" method="post">
-   <table> 
-    <td colspan="2"> <h2>Consultas</h2></td> 
+   <table border="0px"> 
+    <td> <h2>Consultas</h2></td> 
     <tr>
-    <td><label for="nombre"></label></td>
-   <td> <input type="text" id="nombre" name="nombre" required placeholder="Nombre"></td>
-    <td><label for="surname"></label></td>
+    <label for="nombre"></label>
+    <td><input type="text" id="nombre" name="nombre" required placeholder="Nombre"></td>
+    <label for="surname"></label>
     <td><input type="text" id="surname" name="surname" required placeholder="Apellidos"></td>
 </tr>
 <tr>
-    <td><label for="dni"> </label></td>
+    <label for="dni"> </label>
     <td><input type="number" id="dni" name="dni" required placeholder="DNI"></td>
-    <td><label for="phone"></label></td>
-    <td><input type="number" id="phone" name="phone" required placeholder="phone"></td>
+    <label for="phone"></label>
+    <td><input type="number" id="phone" name="phone" required placeholder="telefono"></td>
     
 
 </tr>
     <tr>   
     
-    <td><label for="cellphone"></label></td>
+    <label for="cellphone"></label>
     <td><input type="text" id="cellphone" name="cellphone" required placeholder="Celular"></td> 
-    <td><label for="email"></label></td>
+    <label for="email"></label>
     <td><input type="text" id="email" name="email" required placeholder="Correo electrónico"></td>
 
 </tr>
   <tr>
-    <td colspan="2"><label for="direction"></label></td>
-    <td><input type="text" id="direction" name="direction" placeholder="Dirección"></td>
-    
+    <label for="direction"></label>
+    <td colspan="2"><input type="text" id="direction" name="direction" placeholder="Dirección"></td>
+    <td colspan="2"> </td>
   </tr>
 
 
@@ -76,7 +56,7 @@
     <tr>
 
     
-        <td><label for="Departamento"></label></td>
+        <label for="Departamento"></label>
         <td ><select name="Departamento" id="Departamento" required  placeholder="Departamento">
             <option value="1">Lima</option>
             <option value="2">Norte</option>
@@ -95,7 +75,7 @@
 
 <tr>
     
-    <td colspan="1"><label for="mensaje"></label></td>
+    <label for="mensaje"></label>
     <td><textarea id="mensaje" name="mensaje" rows="8" required></textarea></td>
 </tr>
 
