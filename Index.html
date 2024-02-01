@@ -5,19 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de Contacto</title>
   <style>
+   *{
+    text-align: left;
+    } 
+    
     body {
       font-family: Arial, sans-serif;
     }
     form {
-      max-width: 1600px;
-      margin: 40px auto;
+      max-width: 4000px;
+      margin: 20px auto;
     }
     label {
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
     input, textarea {
-      width: 100%;
+      width: 200px;
       padding: 8px;
       margin-bottom: 16px;
       box-sizing: border-box;
@@ -34,12 +38,13 @@
 </head>
 <body>
 
-    <h2>CONSULTAS</h2>
+    
 
   <form action="#" method="post">
-   <table>
-<tr>
-   <td> <label for="nombre"></label></td>
+   <table> 
+    <td colspan="2"> <h2>Consultas</h2></td> 
+    <tr>
+    <td><label for="nombre"></label></td>
    <td> <input type="text" id="nombre" name="nombre" required placeholder="Nombre"></td>
     <td><label for="surname"></label></td>
     <td><input type="text" id="surname" name="surname" required placeholder="Apellidos"></td>
@@ -57,12 +62,22 @@
     <td><label for="cellphone"></label></td>
     <td><input type="text" id="cellphone" name="cellphone" required placeholder="Celular"></td> 
     <td><label for="email"></label></td>
-    <td><input type="email" id="email" name="email" required placeholder="Correo electrónico"></td>
+    <td><input type="text" id="email" name="email" required placeholder="Correo electrónico"></td>
 
 </tr>
+  <tr>
+    <td colspan="2"><label for="direction"></label></td>
+    <td><input type="text" id="direction" name="direction" placeholder="Dirección"></td>
+    
+  </tr>
+
+
+
     <tr>
+
+    
         <td><label for="Departamento"></label></td>
-        <td><select name="Departamento" id="Departamento" required selection-placeholder="Departamento">
+        <td ><select name="Departamento" id="Departamento" required  placeholder="Departamento">
             <option value="1">Lima</option>
             <option value="2">Norte</option>
             <option value="3">Centro</option>
@@ -80,8 +95,8 @@
 
 <tr>
     
-    <td><label for="mensaje"></label></td>
-    <td><textarea id="mensaje" name="mensaje" rows="4" required></textarea></td>
+    <td colspan="1"><label for="mensaje"></label></td>
+    <td><textarea id="mensaje" name="mensaje" rows="8" required></textarea></td>
 </tr>
 
 </table>
